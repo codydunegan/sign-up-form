@@ -15,6 +15,7 @@
             <img src="./images/odin-lined.png" alt="The Odin Project Logo">
             <span id="logo">ODIN</span>
         </div>
+        <div class="credits">Photo by <a href="https://unsplash.com/@peter_mc_greats">Pietro De Grandi</a> on <a href="https://unsplash.com/photos/6U4wogjLArk">Unsplash</a></div>
     </aside>
     <section id="content">
         <header>
@@ -29,13 +30,13 @@
                 <div class="row">
                     <div>
                         <label for="firstname">First Name:</label>
-                        <input type="text" name="firstname" id="firstname" required>
-                        <span class="error" aria-live="polite">Please provide a first name</span>
+                        <input type="text" name="firstname" id="firstname" minlength="2" required>
+                        <span class="error" aria-live="polite">First name must be at least 2 letters</span>
                     </div>
                     <div>
                         <label for="lastname">Last Name:</label>
-                        <input type="text" name="lastname" id="lastname" required>
-                        <span class="error" aria-live="polite">Please provide a last name</span>
+                        <input type="text" name="lastname" id="lastname" minlength="2" required>
+                        <span class="error" aria-live="polite">Last name must be at least 2 letters</span>
                     </div>
                 </div>
                 <div class="row">
@@ -46,19 +47,19 @@
                     </div>
                     <div>
                         <label for="tel">Telephone #:</label>
-                        <input type="tel" name="tel" id="tel">
+                        <input type="tel" name="tel" id="tel" minlength="9">
                         <span class="error" aria-live="polite"></span>
                     </div>
                 </div>
                 <div class="row">
                     <div>
                         <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" required>
-                        <span class="error" aria-live="polite">Please provide a password</span>
+                        <input type="password" name="password" id="password" minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        <span class="error" aria-live="polite">Invalid password</span>
                     </div>
                     <div>
                         <label for="passwordconfirm">Confirm Password:</label>
-                        <input type="password" name="passwordconfirm" id="passwordconfirm" required>
+                        <input type="password" name="passwordconfirm" id="passwordconfirm" minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                         <span class="error" aria-live="polite">Passwords do not match</span>
                     </div>
                 </div>

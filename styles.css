@@ -80,12 +80,15 @@ main {
 
 input {
     padding: 5px 10px;
-    width: 100%;
     font-size: 1.2rem;
 }
 
 input:focus {
     border: 3px solid #197eab;
+}
+
+.valid {
+    border: 3px solid green;
 }
 
 .error {
@@ -101,7 +104,7 @@ input:focus {
 }
 
 .row > div {
-
+    max-width: 250px;
 }
 
 footer {
@@ -118,4 +121,15 @@ footer {
     font-size: 1.2rem;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.credits {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+.credits a {
+    color: white;
+    text-decoration: underline;
 }
