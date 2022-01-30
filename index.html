@@ -10,6 +10,64 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    
+    <aside id="sidebar">
+        <div id="overlay">
+            <img src="./images/odin-lined.png" alt="The Odin Project Logo">
+            <span id="logo">ODIN</span>
+        </div>
+    </aside>
+    <section id="content">
+        <header>
+            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
+            <h2>You <em>know</em> you want to.</h2>
+        </header>
+        <main>
+            <form action="" method="" id="signupform">
+                <div class="row">
+                    <h2>Let's do this!</h2>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <span class="error" aria-live="polite">Please provide a first name</span>
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                        <span class="error" aria-live="polite">Please provide a last name</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <span class="error" aria-live="polite">Invalid email address</span>
+                    </div>
+                    <div>
+                        <label for="tel">Telephone #:</label>
+                        <input type="tel" name="tel" id="tel">
+                        <span class="error" aria-live="polite"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                        <span class="error" aria-live="polite">Please provide a password</span>
+                    </div>
+                    <div>
+                        <label for="passwordconfirm">Confirm Password:</label>
+                        <input type="password" name="passwordconfirm" id="passwordconfirm" required>
+                        <span class="error" aria-live="polite">Passwords do not match</span>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <button id="createBtn">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </footer>
+    </section>
 </body>
 </html>
